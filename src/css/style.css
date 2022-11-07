@@ -467,4 +467,89 @@ html, body {
   transform: translateY(-8px);
 }
 
+html, body {
+  font-size: 16px;
+}
+
+.destinations {
+  min-height: 100vh;
+  padding: 1.625rem 0 8.75rem 11.375rem;
+}
+
+.descriptions {
+  margin-right: 24.125rem;
+}
+.descriptions__hd2 {
+  height: 6.5625rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 1.32;
+  margin: 0;
+  color: #172432;
+  border: 1px none #000000;
+  position: relative;
+}
+.descriptions__hd2::before {
+  content: "";
+  position: absolute;
+  bottom: -0.125rem;
+  left: -0.0625rem;
+  width: 22.8125rem;
+  height: 0.1875rem;
+  display: block;
+  background-color: #FF7757;
+}
+.descriptions__text {
+  margin-top: 2rem;
+  color: #767E86;
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.16;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 97.25rem;
+  margin-top: 6.25rem;
+}
+
+.group {
+  margin-right: 2rem;
+  position: relative;
+}
+.group__desc {
+  color: #FFF;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.32;
+  position: relative;
+  bottom: 2.5rem;
+  left: 1.5rem;
+}
+.group .local {
+  transform: translateY(37px);
+  font-family: "Rubik", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-left: 2.5625rem;
+  margin-top: 1.0625rem;
+}
+.group .local::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/destinations_location.svg");
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  left: -2.6875rem;
+  color: #FFF;
+}
+
 /*# sourceMappingURL=style.css.map */
