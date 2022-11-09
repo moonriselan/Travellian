@@ -1,0 +1,112 @@
+@import "variables";
+@import "helpers";
+
+.blog {
+  min-height: 100vh;
+  padding-bottom: toRem(140px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.heading {
+  width: 100%;
+  max-width: toRem(1556px);
+  margin-bottom: toRem(100px);
+
+  &__hd3 {
+    font-family: 'Playfair Display', serif;
+    color: $input-font-color;
+    font-weight: 400;
+    font-size: toRem(64px);
+    line-height: 1.32;
+    position: relative;
+    margin-top: 0;
+
+    &::before {
+      content: '';
+      background-color: $primary-color;
+      position: absolute;
+      display: block;
+      width: toRem(150px);
+      height: toRem(3px);
+      bottom: toRem(-20px);
+  }
+}
+
+  &__text {
+    font-family: 'Rubik', serif;
+    color: $secondary-font-color;
+    font-weight: 400;
+    font-size: toRem(24px);
+    line-height: 1.16;
+    margin-top: toRem(52px);
+    margin-bottom: 0;
+}
+}
+
+.designation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: toRem(1556px);
+  min-height: toRem(873px);
+  box-sizing: border-box;
+
+  &__title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: toRem(54px);
+    color: $input-font-color;
+    line-height: 1.33;
+    margin-top: toRem(106.5px);
+    margin-bottom: 0;
+}
+
+  &__desc {
+    font-family: 'Rubik', serif;
+    font-weight: 400;
+    color: $input-font-color;
+    font-size: toRem(24px);
+    line-height: 2.16;
+    margin-top: toRem(24px);
+}
+
+  &__btn {
+    font-family: 'Rubik', serif;
+    font-size: toRem(24px);
+    font-weight: 400;
+    line-height: 2.16;
+    color: $primary-color;
+    position: relative;
+    cursor: pointer;
+    border: 0;
+    background: none;
+    margin-bottom: toRem(107px);
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("#{$imgs-path}/blog-arrow.svg");
+      background-repeat: no-repeat;
+      display: inline-block;
+      height: toRem(16px);
+      right: toRem(-40px);
+      bottom: toRem(18px);
+      width: toRem(27px);
+  }
+}
+
+  .desc-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    max-width: toRem(762px);
+    margin-left: toRem(32px);
+
+}
+}
