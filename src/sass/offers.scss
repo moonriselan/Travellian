@@ -1,0 +1,150 @@
+@import "variables";
+@import "helpers";
+
+.offer {
+  min-height: 100vh;
+  padding-bottom: toRem(140px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.special {
+  width: 100%;
+  max-width: toRem(1556px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: toRem(100px);
+
+  &__hd3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: toRem(64px);
+    line-height: 1.32;
+    color: $input-font-color;
+    margin: 0;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: toRem(241px);
+      height: toRem(3px);
+      right: 0;
+      bottom: toRem(-20px);
+      background-color: $primary-color;
+    }
+  }
+
+  &__text {
+    font-family: 'Rubik', serif;
+    font-weight: 400;
+    font-size: toRem(24px);
+    line-height: 1.16;
+    margin-top: toRem(52px);
+    margin-bottom: 0;
+    color: $secondary-font-color;
+  }
+}
+
+.specification {
+  width: 100%;
+  max-width: toRem(1556px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.totality {
+  margin-right: toRem(32px);
+
+  &__container {
+    padding: 40px 24px;
+  }
+}
+
+.text-box {
+  align-items: flex-start;
+  background: #FFF8F1;
+  border-radius: 0 0 toRem(26px) toRem(26px);
+  margin-top: toRem(-5px);
+  box-sizing: border-box;
+
+  .price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+    &__text {
+      font-family: 'Rubik', serif;
+      font-weight: 400;
+      font-size: toRem(20px);
+      line-height: 1.2;
+      color: $secondary-font-color;
+    }
+
+    &__price {
+      font-family: 'Rubik', serif;
+      font-weight: 400;
+      font-size: toRem(40px);
+      line-height: 1.17;
+      color: $primary-color;
+    }
+
+    &__btn {
+      margin-left: toRem(132px);
+      padding: toRem(20px) toRem(40px);
+      border: 0;
+      border-radius: toRem(12px);
+      background: $primary-color;
+      cursor: pointer;
+      text-align: center;
+      font-family: 'Rubik', serif;
+      font-weight: 400;
+      font-size: toRem(20px);
+      line-height: 1.2;
+      text-transform: uppercase;
+      color: $primary-font-color;
+
+    }
+  }
+}
+
+.description-box {
+  &__title {
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: toRem(28px);
+    line-height: 1.25;
+    color: $secondary-font-color;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url("#{$imgs-path}/Rating.svg");
+      width: toRem(136px);
+      height: toRem(24px);
+      bottom: toRem(-31px);
+      left: toRem(-1px);
+    }
+  }
+
+  &__desc {
+    font-family: 'Rubik', serif;
+    font-weight: 400;
+    font-size: toRem(18px);
+    line-height: 1.16;
+    color: $input-font-color;
+    margin-top: toRem(67px);
+    margin-bottom: toRem(24px);
+  }
+
+}
