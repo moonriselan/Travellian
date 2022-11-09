@@ -1,0 +1,98 @@
+@import "variables";
+@import "helpers";
+
+.destinations {
+  min-height: 100vh;
+  padding: toRem(26px) 0 toRem(140px) toRem(182px);
+
+}
+
+.descriptions {
+  margin-right: toRem(386px);
+
+
+  &__hd2 {
+    height: toRem(105px);
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: toRem(64px);
+    line-height: 1.32;
+    margin:0;
+    color: $input-font-color;
+    border: 1px none #000000;
+    position: relative;
+
+
+    &::before{
+      content: '';
+      position: absolute;
+      bottom: toRem(-2px);
+      left: toRem(-1px);
+      width: toRem(365px);
+      height: toRem(3px);
+      display: block;
+      background-color:  $primary-color;
+    }
+  }
+
+  &__text {
+    margin-top:toRem(32px);
+    color: $secondary-font-color;
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-size: toRem(24px);
+    line-height: 1.16;
+
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: toRem(1556px);
+  margin-top: toRem(100px);
+}
+
+.group {
+  margin-right: toRem(32px);
+  position: relative;
+
+  &__img {
+  }
+
+  &__desc {
+    color: $primary-font-color;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: toRem(28px);
+    line-height: 1.32;
+    position: relative;
+    bottom: toRem(40px);
+    left: toRem(24px);
+
+  }
+
+  .local {
+    transform: translateY(37px);
+    font-family: 'Rubik', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: toRem(24px);
+    margin-left: toRem(41px);
+    margin-top: toRem(17px);
+
+    &::before{
+      content: '';
+      position: absolute;
+      background-image: url("#{$imgs-path}/destinations_location.svg");
+      display: inline-block;
+      width: toRem(24px);
+      height: toRem(24px);
+      left: toRem(-43px);
+      //background-size: 24px;
+      color: $primary-font-color;
+    }
+  }
+}
