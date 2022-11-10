@@ -2,71 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Travelian</title>
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="./src/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
 </head>
 <body>
 <section class="intro">
     <header class="intro__header header">
-        <a href="" class="header__logo logo"><img src="./src/images/Logo.svg" alt="Travellian logo"
-                                                  class="logo__img"></a>
+        <a class="header__logo logo" href=""><img alt="Travellian logo" class="logo__img"
+                                                  src="./src/images/Logo.svg"></a>
         <nav class="header__menu main-menu">
-            <a href="" class="main-menu__item main-menu__item--active">Home</a>
-            <a href="" class="main-menu__item">Explore</a>
-            <a href="" class="main-menu__item">Travel</a>
-            <a href="" class="main-menu__item">Blog</a>
-            <a href="" class="main-menu__item">Pricing</a>
+            <a class="main-menu__item main-menu__item--active" href="">Home</a>
+            <a class="main-menu__item" href="">Explore</a>
+            <a class="main-menu__item" href="">Travel</a>
+            <a class="main-menu__item" href="">Blog</a>
+            <a class="main-menu__item" href="">Pricing</a>
         </nav>
         <nav class="header__menu auth-menu">
-            <a href="" class="auth-menu__item">Login</a>
-            <a href="" class="auth-menu__item auth-menu__item--btn">Sign up</a>
+            <a class="auth-menu__item" href="">Login</a>
+            <a class="auth-menu__item auth-menu__item--btn" href="">Sign up</a>
         </nav>
     </header>
 
-<div class="lead">
-    <h1 class="lead__hd1">Start your unforgettable<br>journey with us.</h1>
-    <p class="lead__text">The best travel for your journey begins now.</p>
-</div>
-
-<form action="" class="search">
-    <div class="search__wrapper">
-        <div class="search__group">
-            <label for="destination" class="search__lbl">Destination</label>
-            <input type="text" id="destination" name="destination" class="search__input" placeholder="Dubai">
-        </div>
-        <div class="search__group">
-            <label for="person" class="search__lbl">Person</label>
-            <select name="person" id="person" class="search__input search__input--select">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-        </div>
-        <div class="search__group">
-            <label for="checkin" class="search__lbl">Check In</label>
-            <input type="date" id="checkin" name="checkin" class="search__input">
-        </div>
-        <div class="search__group">
-            <label for="checkout" class="search__lbl">Check Out</label>
-            <input type="date" id="checkout" name="checkout" class="search__input">
-        </div>
-        <button type="submit"  class="search__btn">Book<br>Now</button>
+    <div class="lead">
+        <h1 class="lead__hd1">Start your unforgettable<br>journey with us.</h1>
+        <p class="lead__text">The best travel for your journey begins now.</p>
     </div>
-</form>
+
+    <form action="" class="search">
+        <div class="search__wrapper">
+            <div class="search__group">
+                <label class="search__lbl" for="destination">Destination</label>
+                <input class="search__input" id="destination" name="destination" placeholder="Dubai" type="text">
+            </div>
+            <div class="search__group">
+                <label class="search__lbl" for="person">Person</label>
+                <select class="search__input search__input--select" id="person" name="person">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="search__group">
+                <label class="search__lbl" for="checkin">Check In</label>
+                <input class="search__input" id="checkin" name="checkin" type="date">
+            </div>
+            <div class="search__group">
+                <label class="search__lbl" for="checkout">Check Out</label>
+                <input class="search__input" id="checkout" name="checkout" type="date">
+            </div>
+            <button class="search__btn" type="submit">Book<br>Now</button>
+        </div>
+    </form>
 </section>
 <section class="destinations">
     <div class="descriptions">
@@ -76,21 +76,21 @@
     </div>
     <div class="content">
         <div class="content__group group">
-            <img src="./src/images/destinations1.svg" alt="group__img">
+            <img alt="group__img" src="./src/images/destinations1.svg">
             <p class="group__desc">Monument of Berlin</p>
             <p class="group__desc local">Berlin, Germany</p>
         </div>
         <div class="content__group group">
-            <img src="./src/images/destinations2.svg" alt="group__img">
+            <img alt="group__img" src="./src/images/destinations2.svg">
             <p class="group__desc">Millennium Bridge</p>
             <p class="group__desc local">London, United Kingdom</p>
         </div>
         <div class="content__group group">
-            <img src="./src/images/destinations3.svg" alt="group__img">
+            <img alt="group__img" src="./src/images/destinations3.svg">
             <p class="group__desc">Rialto Bridge</p>
             <p class="group__desc local">Venice, Italy</p>
         </div>
-       /
+        /
     </div>
 </section>
 <section class="offer">
@@ -100,11 +100,12 @@
     </div>
     <div class="specification">
         <div class="specification__totality totality">
-            <img src="./src/images/offer1.svg" alt="totality__img">
+            <img alt="totality__img" src="./src/images/offer1.svg">
             <div class="totality__container text-box">
                 <div class="text-box description-box">
                     <p class="description-box__title">Lisbon, Portugal</p>
-                    <p class="description-box__desc">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very
+                    <p class="description-box__desc">5 nights and 4 days in 5 star hotel, breakfast and lunch included.
+                        Very
                         popular
                         during the renaissance. Passage and going through the cites of the world in classical
                         literature.
@@ -112,19 +113,20 @@
                 </div>
                 <div class="text-box price-box">
                     <p class="price-box__text">From</p>
-                    <p class ="price-box__price">€500</p>
-                    <button type="submit" class="price-box__btn">Details</button>
+                    <p class="price-box__price">€500</p>
+                    <button class="price-box__btn" type="submit">Details</button>
                 </div>
             </div>
         </div>
 
 
         <div class="specification__totality totality">
-            <img src="./src/images/offer2.svg" alt="totality__img">
+            <img alt="totality__img" src="./src/images/offer2.svg">
             <div class="totality__container text-box">
                 <div class="text-box description-box">
                     <p class="description-box__title">Athens, Greece</p>
-                    <p class="description-box__desc">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very
+                    <p class="description-box__desc">5 nights and 4 days in 5 star hotel, breakfast and lunch included.
+                        Very
                         popular
                         during the renaissance. Passage and going through the cites of the world in classical
                         literature.
@@ -132,17 +134,18 @@
                 </div>
                 <div class="text-box price-box">
                     <p class="price-box__text">From</p>
-                    <p class ="price-box__price">€800</p>
-                    <button type="submit" class="price-box__btn">Details</button>
+                    <p class="price-box__price">€800</p>
+                    <button class="price-box__btn" type="submit">Details</button>
                 </div>
             </div>
         </div>
         <div class="specification__totality totality">
-            <img src="./src/images/offer3.svg" alt="totality__img">
+            <img alt="totality__img" src="./src/images/offer3.svg">
             <div class="totality__container text-box">
                 <div class="text-box description-box">
                     <p class="description-box__title">Rome, Italy</p>
-                    <p class="description-box__desc">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very
+                    <p class="description-box__desc">5 nights and 4 days in 5 star hotel, breakfast and lunch included.
+                        Very
                         popular
                         during the renaissance. Passage and going through the cites of the world in classical
                         literature.
@@ -150,8 +153,8 @@
                 </div>
                 <div class="text-box price-box">
                     <p class="price-box__text">From</p>
-                    <p class ="price-box__price">€750</p>
-                    <button type="submit" class="price-box__btn">Details</button>
+                    <p class="price-box__price">€750</p>
+                    <button class="price-box__btn" type="submit">Details</button>
                 </div>
             </div>
         </div>
@@ -163,7 +166,7 @@
         <p class="heading__text">An insight the incredible experience in the world</p>
     </div>
     <div class="designation">
-        <img src="src/images/Blog.svg" alt="designation__img">
+        <img alt="designation__img" src="src/images/Blog.svg">
         <div class="desc-box">
             <h4 class="designation__title ">Beautiful Italy <br/> Let’s travel</h4>
             <p class="designation__desc ">But I must explain to you how all this mistaken idea of denouncing pleasure
@@ -178,5 +181,43 @@
         </div>
     </div>
 </section>
+<section class="planners">
+    <div class="trip">
+
+        <h3 class="trip__hd3">Trip Planners</h3>
+        <p class="trip__text">20 years from now you will be more disappointed by the things that you didn’t do. Stop
+            regretting and start travelling, start throwing off the bowlines.</p>
+        <button class="trip__btn">View all trip plans</button>
+    </div>
+    <div class="whole">
+        <img alt="entirety__img" class="whole__img" src="src/images/planner1.svg">
+        <div class="img-content">
+            <img alt="whole__img" class="whole__img" src="src/images/planner2.svg">
+            <div class="title-price">
+                <p class="title-price__price">Guided Tour</p>
+                <p class="title-price__price">€99/Day</p>
+            </div>
+            <div class="tour-day">
+                <p class="tour-day__text">Paris City Tour</p>
+                <p class="tour-day__day">7 Days tour</p>
+            </div>
+        </div>
+        <img alt="whole__img" class="whole__img" src="src/images/planner3.svg">
+        <img alt="whole__img" class="whole__img" src="src/images/planner4.svg">
+    </div>
+</section>
+<section class="gallery">
+    <div class="destination-gallery">
+        <h3 class="destination-gallery__hd3">Destination Gallery</h3>
+        <p class="destination-gallery__text">Our photo gallery on trip</p>
+    </div>
+    <div class="pictures">
+        <img alt="pictures__img" class="pictures__img--higher" src="src/images/gallery1.svg">
+        <img alt="pictures__img" class="pictures__img--higher" src="src/images/gallery2.svg">
+        <img alt="pictures__img" class="pictures__img--higher" src="src/images/gallery3.svg">
+        <img alt="pictures__img" class="pictures__img--higher" src="src/images/gallery4.svg">
+    </div>
+</section>
+
 </body>
 </html>
