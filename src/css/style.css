@@ -978,4 +978,70 @@ html, body {
   margin: 0 0;
 }
 
+html, body {
+  font-size: 16px;
+}
+
+.gallery {
+  min-height: 100vh;
+  padding-top: 8.75rem;
+  padding-bottom: 8.75rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.destination-gallery {
+  width: 100%;
+  max-width: 97.25rem;
+  margin-bottom: 6.25rem;
+}
+.destination-gallery__hd3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  position: relative;
+  color: #172432;
+  font-size: 4rem;
+  line-height: 1.32;
+  margin-top: 0;
+  margin-bottom: 3.25rem;
+}
+.destination-gallery__hd3::before {
+  content: "";
+  position: absolute;
+  background-color: #FF7757;
+  display: block;
+  width: 17.6875rem;
+  height: 0.1875rem;
+  bottom: -1.25rem;
+}
+.destination-gallery__text {
+  font-family: "Rubik", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.16;
+  color: #767E86;
+  margin: 0;
+}
+
+.pictures {
+  width: 100%;
+  max-width: 97.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1475px) {
+  .pictures {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.pictures__img--higher:hover {
+  transform: translateY(-80px);
+}
+
 /*# sourceMappingURL=style.css.map */
