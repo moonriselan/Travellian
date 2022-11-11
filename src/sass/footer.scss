@@ -1,0 +1,134 @@
+@import "variables";
+@import "helpers";
+
+%font {
+  font-family: 'Rubik', serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  text-decoration: none;
+  margin-bottom: toRem(12px);
+
+}
+
+%font-active {
+  font-family: 'Rubik', serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  text-decoration: none;
+  margin-bottom: toRem(16px);
+  margin-top: 0;
+}
+
+footer {
+  width: 100%;
+  margin-top: toRem(-109px);
+  padding-top: toRem(240px);
+  padding-bottom: toRem(140px);
+  background-color: $input-font-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.content-footer {
+  width: 100%;
+  max-width: toRem(1556px);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.logo-box {
+  display: flex;
+  flex-direction: column;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__text {
+    color: $primary-font-color;
+  }
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  color: $primary-font-color;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__item--active {
+    @extend %font-active;
+  }
+
+  &__item {
+    @extend %font;
+  }
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  color: $primary-font-color;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__item--active {
+    @extend %font-active;
+  }
+
+  &__item {
+    @extend %font;
+  }
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  color: $primary-font-color;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__item--active {
+    @extend %font-active;
+  }
+
+  &__item {
+    @extend %font;
+  }
+}
+
+.follow-us {
+  display: flex;
+  flex-direction: column;
+  color: $primary-font-color;
+
+  &__item--active {
+    @extend %font-active;
+  }
+
+  &__img {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: toRem(24px);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
