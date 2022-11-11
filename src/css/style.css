@@ -1044,4 +1044,211 @@ html, body {
   transform: translateY(-80px);
 }
 
+html, body {
+  font-size: 16px;
+}
+
+.box-opinion__text--3::after, .box-opinion__text--2::after, .box-opinion__text--1::after {
+  content: "";
+  position: absolute;
+  width: 6.25rem;
+  height: 6.25rem;
+  left: 0;
+  top: -7.8125rem;
+}
+
+.experiences {
+  min-height: 100vh;
+  padding-bottom: 15rem;
+  padding-top: 8.75rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-block {
+  width: 100%;
+  max-width: 97.25rem;
+  margin-bottom: 10rem;
+}
+.title-block__hd3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 1.32;
+  color: #172432;
+  margin-top: 0;
+  margin-bottom: 3.25rem;
+  position: relative;
+}
+.title-block__hd3::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 21.6875rem;
+  height: 0.1875rem;
+  bottom: -1.25rem;
+  background-color: #FF7757;
+}
+.title-block__text {
+  font-family: "Rubik", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.16;
+  color: #767E86;
+  margin: 0;
+}
+
+.opinions {
+  width: 100%;
+  max-width: 97.25rem;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 0;
+  margin-bottom: 10rem;
+}
+
+.box-opinion {
+  background-color: #F5F6F7;
+  border-radius: 12px;
+  margin-right: 2rem;
+  max-width: 41.4375rem;
+  padding: 60px 40px 40px;
+}
+.box-opinion__text {
+  font-family: "Rubik", serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.27;
+  color: #767E86;
+  margin-top: 0;
+  position: relative;
+}
+.box-opinion__text::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/Rating.svg");
+  width: 8.5rem;
+  height: 1.5rem;
+  bottom: -2.3125rem;
+  left: -0.0625rem;
+}
+.box-opinion__text--1 {
+  position: relative;
+}
+.box-opinion__text--1::after {
+  background-image: url("../images/Avatar1.svg");
+}
+.box-opinion__text--2 {
+  position: relative;
+}
+.box-opinion__text--2::after {
+  background-image: url("../images/Avatar2.svg");
+}
+.box-opinion__text--3 {
+  position: relative;
+}
+.box-opinion__text--3::after {
+  background-image: url("../images/Avatar3.svg");
+}
+.box-opinion__signature {
+  margin-bottom: 0.25rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #767E86;
+  margin-top: 4rem;
+}
+.box-opinion__signature--size {
+  font-family: "Rubik", serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #767E86;
+  margin: 0;
+}
+
+html, body {
+  font-size: 16px;
+}
+
+.newsletter {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin-top: -7.5rem;
+  margin-left: 20.375rem;
+}
+
+.box-form {
+  width: 100%;
+  max-width: 68.75rem;
+  background-color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  border-radius: 26px;
+  padding: 60px 80px;
+  margin: 0;
+}
+.box-form__text {
+  color: #767E86;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 1.32;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 35.4375rem;
+}
+.form-group {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+.form-group__lbl {
+  font-family: "Rubik", serif;
+  font-weight: 400;
+  color: #767E86;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.form-group__input {
+  padding: 1.5rem 2.5rem;
+  background: #FFE8D4;
+  border-radius: 12px;
+  border: none;
+  font-family: "Rubik", serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #FF7757;
+  line-height: 1.2;
+  width: 100%;
+  max-width: 23.25rem;
+}
+
+.btn__btn {
+  max-width: 10.1875rem;
+  font-family: "Rubik", serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #FFF;
+  background: #FF7757;
+  line-height: 1.16;
+  border: 0;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  padding: 1.53125rem 2.1875rem;
+  margin-top: 2.4375rem;
+}
+
 /*# sourceMappingURL=style.css.map */

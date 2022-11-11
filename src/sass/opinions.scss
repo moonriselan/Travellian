@@ -1,0 +1,141 @@
+@import "variables";
+@import "helpers";
+
+%text-after {
+  content: '';
+  position: absolute;
+  width: toRem(100px);
+  height: toRem(100px);
+  left: 0;
+  top: toRem(-125px);
+}
+
+.experiences {
+  min-height: 100vh;
+  padding-bottom: toRem(240px);
+  padding-top: toRem(140px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-block {
+  width: 100%;
+  max-width: toRem(1556px);
+  margin-bottom: toRem(160px);
+
+  &__hd3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: toRem(64px);
+    line-height: 1.32;
+    color: $input-font-color;
+    margin-top: 0;
+    margin-bottom: toRem(52px);
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: toRem(347px);
+      height: toRem(3px);
+      bottom: toRem(-20px);
+      background-color: $primary-color;
+    }
+  }
+
+  &__text {
+    font-family: 'Rubik', serif;
+    font-weight: 400;
+    font-size: toRem(24px);
+    line-height: 1.16;
+    color: $secondary-font-color;
+    margin: 0;
+  }
+}
+
+.opinions {
+  width: 100%;
+  max-width: toRem(1556px);
+  display: flex;
+  justify-content: space-between;
+  margin-right: 0;
+  margin-bottom: toRem(160px);
+}
+
+.box-opinion {
+  background-color: #F5F6F7;
+  border-radius: 12px;
+  margin-right: toRem(32px);
+  max-width: toRem(663px);
+  padding: 60px 40px 40px;
+
+  &__text {
+    font-family: 'Rubik', serif;
+    font-weight: 400;
+    font-size: toRem(18px);
+    line-height: 1.27;
+    color: $secondary-font-color;
+    margin-top: 0;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url("#{$imgs-path}/Rating.svg");
+      width: toRem(136px);
+      height: toRem(24px);
+      bottom: toRem(-37px);
+      left: toRem(-1px);
+    }
+
+  }
+
+  &__text--1 {
+    position: relative;
+
+    &::after {
+      @extend %text-after;
+      background-image: url("#{$imgs-path}/Avatar1.svg");
+    }
+  }
+
+  &__text--2 {
+    position: relative;
+
+    &::after {
+      @extend %text-after;
+      background-image: url("#{$imgs-path}/Avatar2.svg");
+    }
+  }
+
+  &__text--3 {
+    position: relative;
+
+    &::after {
+      @extend %text-after;
+      background-image: url("#{$imgs-path}/Avatar3.svg");
+    }
+  }
+
+  &__signature {
+    margin-bottom: toRem(4px);
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: toRem(24px);
+    line-height: 1.33;
+    color: $secondary-font-color;
+    margin-top: toRem(64px);
+  }
+
+  &__signature--size {
+    font-family: 'Rubik', serif;
+    font-weight: 400;
+    font-size: toRem(18px);
+    color: $secondary-font-color;
+    margin: 0;
+  }
+
+}
