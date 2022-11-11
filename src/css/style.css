@@ -1169,4 +1169,86 @@ html, body {
   margin: 0;
 }
 
+html, body {
+  font-size: 16px;
+}
+
+.newsletter {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin-top: -7.5rem;
+  margin-left: 20.375rem;
+}
+
+.box-form {
+  width: 100%;
+  max-width: 68.75rem;
+  background-color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  border-radius: 26px;
+  padding: 60px 80px;
+  margin: 0;
+}
+.box-form__text {
+  color: #767E86;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 1.32;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 35.4375rem;
+}
+.form-group {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+.form-group__lbl {
+  font-family: "Rubik", serif;
+  font-weight: 400;
+  color: #767E86;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.form-group__input {
+  padding: 1.5rem 2.5rem;
+  background: #FFE8D4;
+  border-radius: 12px;
+  border: none;
+  font-family: "Rubik", serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #FF7757;
+  line-height: 1.2;
+  width: 100%;
+  max-width: 23.25rem;
+}
+
+.btn__btn {
+  max-width: 10.1875rem;
+  font-family: "Rubik", serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #FFF;
+  background: #FF7757;
+  line-height: 1.16;
+  border: 0;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  padding: 1.53125rem 2.1875rem;
+  margin-top: 2.4375rem;
+}
+
 /*# sourceMappingURL=style.css.map */
