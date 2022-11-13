@@ -1102,7 +1102,7 @@ html, body {
 
 .opinions {
   width: 100%;
-  max-width: 97.25rem;
+  max-width: 120rem;
   display: flex;
   justify-content: space-between;
   margin-right: 0;
@@ -1138,19 +1138,19 @@ html, body {
   position: relative;
 }
 .box-opinion__text--1::after {
-  background-image: url("../images/Avatar1.svg");
+  background-image: url("../images/Avatar1.png");
 }
 .box-opinion__text--2 {
   position: relative;
 }
 .box-opinion__text--2::after {
-  background-image: url("../images/Avatar2.svg");
+  background-image: url("../images/Avatar2.png");
 }
 .box-opinion__text--3 {
   position: relative;
 }
 .box-opinion__text--3::after {
-  background-image: url("../images/Avatar3.svg");
+  background-image: url("../images/Avatar3.png");
 }
 .box-opinion__signature {
   margin-bottom: 0.25rem;

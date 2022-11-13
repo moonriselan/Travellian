@@ -58,7 +58,7 @@
 
 .opinions {
   width: 100%;
-  max-width: toRem(1556px);
+  max-width: toRem(1920px);
   display: flex;
   justify-content: space-between;
   margin-right: 0;
@@ -98,7 +98,7 @@
 
     &::after {
       @extend %text-after;
-      background-image: url("#{$imgs-path}/Avatar1.svg");
+      background-image: url("#{$imgs-path}/Avatar1.png");
     }
   }
 
@@ -107,7 +107,7 @@
 
     &::after {
       @extend %text-after;
-      background-image: url("#{$imgs-path}/Avatar2.svg");
+      background-image: url("#{$imgs-path}/Avatar2.png");
     }
   }
 
@@ -116,7 +116,7 @@
 
     &::after {
       @extend %text-after;
-      background-image: url("#{$imgs-path}/Avatar3.svg");
+      background-image: url("#{$imgs-path}/Avatar3.png");
     }
   }
 
