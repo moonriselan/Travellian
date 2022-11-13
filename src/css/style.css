@@ -923,7 +923,15 @@ html, body {
 @media screen and (max-width: 1519px) {
   .whole .whole__img {
     margin-bottom: 1.25rem;
+    transition: all 400ms;
   }
+}
+.whole .whole__img:hover {
+  transform: translateY(-3rem);
+}
+.whole .whole__img:hover .whole__img {
+  opacity: 1;
+  visibility: visible;
 }
 .whole .img-content {
   margin-top: 0;

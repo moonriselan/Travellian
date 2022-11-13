@@ -124,70 +124,82 @@
   .whole__img {
     @media screen and (max-width: 1519px) {
       margin-bottom: toRem(20px);
+      transition: all 400ms;
+    }
+
+    &:hover {
+      transform: translateY(-3rem);
+
+      .whole__img {
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
-
-  .img-content {
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    box-sizing: border-box;
-
-    .title-price {
-      @extend %text;
-      line-height: 1.16;
-      text-transform: uppercase;
-      color: $input-font-color;
-      width: 100%;
+    .img-content {
+      margin-top: 0;
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: flex-start;
-      margin-top: toRem(20px);
+      box-sizing: border-box;
 
-      &__price {
-        margin: 0;
-      }
-    }
 
-    .tour-day {
-      width: 100%;
-      margin: toRem(12px) 0 toRem(23px);
-      display: flex;
-      justify-content: space-between;
 
-      &__text {
-        margin-top: 0;
-        font-family: 'Playfair Display', serif;
-        font-weight: 600;
-        font-size: toRem(28px);
-        line-height: 1.32;
-        color: $input-font-color;
-        position: relative;
-
-        &::before {
-          content: '';
-          position: absolute;
-          background-image: url("#{$imgs-path}/Rating.svg");
-          width: toRem(136px);
-          height: toRem(24px);
-          bottom: toRem(-31px);
-          left: toRem(-1px);
-        }
-
-      }
-
-      &__day {
+      .title-price {
         @extend %text;
         line-height: 1.16;
+        text-transform: uppercase;
         color: $input-font-color;
+        width: 100%;
         display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        margin: 0 0;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: toRem(20px);
+
+
+        &__price {
+          margin: 0;
+        }
       }
+
+      .tour-day {
+        width: 100%;
+        margin: toRem(12px) 0 toRem(23px);
+        display: flex;
+        justify-content: space-between;
+
+        &__text {
+          margin-top: 0;
+          font-family: 'Playfair Display', serif;
+          font-weight: 600;
+          font-size: toRem(28px);
+          line-height: 1.32;
+          color: $input-font-color;
+          position: relative;
+
+          &::before {
+            content: '';
+            position: absolute;
+            background-image: url("#{$imgs-path}/Rating.svg");
+            width: toRem(136px);
+            height: toRem(24px);
+            bottom: toRem(-31px);
+            left: toRem(-1px);
+          }
+
+        }
+
+        &__day {
+          @extend %text;
+          line-height: 1.16;
+          color: $input-font-color;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          margin: 0 0;
+        }
+      }
+
     }
 
   }
-
-}
