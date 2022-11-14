@@ -129,19 +129,16 @@
 
     &:hover {
       transform: translateY(-3rem);
-
-      .whole__img {
-        opacity: 1;
-        visibility: visible;
-      }
     }
   }
+
     .img-content {
       margin-top: 0;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       box-sizing: border-box;
+
 
 
 

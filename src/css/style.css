@@ -929,10 +929,6 @@ html, body {
 .whole .whole__img:hover {
   transform: translateY(-3rem);
 }
-.whole .whole__img:hover .whole__img {
-  opacity: 1;
-  visibility: visible;
-}
 .whole .img-content {
   margin-top: 0;
   display: flex;
